@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Baby's Fourth HTML File (HTML Special Characters)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML Special Characters</h1>
+        <p><strong>Entity:</strong> this is a mechanism for writing special characters or symbols in HTML, such as mathematical symbols, characters in most languages, and many<br>other symbols. Many HTML entities can be specified by name, by a decimal number, or by a hexadecimal number.</p>
+
+        <p><strong>Example:</strong> a copyright symbol.<br>
+            <strong>&copy;</strong> - &amp;copy;<br>
+            <strong>&#169;</strong> - &amp;#169;<br>
+            <strong>&#x000A9;</strong> - &amp;#x000A9;
+        </p>
+
+        <h2>Emojis</h2>
+        <p><strong>Emoji characters</strong> can be displayed in a webpage with a decimal or hexadecimal entity. Example: the happy face. (Something I lack when undercaffeinated.)<br>&#128512; (&amp;#128512;) OR: &#x1F600; (&amp;#x1F600;)</p>
+
+        <h2>Entities for Reserved Characters</h2>
+        <p>The &lt; and &gt; characters require entities to be safely and properly displayed on the webpage. (&amp;lt; and &amp;gt;) The &amp; character requires its own, too. (&amp;amp;)<br>Already, we've used it at least ten times throughout this HTML file, and unless you inspect the page, you'll never know.</p>
+
+        <h2>Non-Breaking Characters</h2>
+        <p>A <strong>non-breaking character</strong> is an inter-word character that permits treating the words on both sides to be one word.</p>
+
+        <h2>Non-Breaking Hyphen</h2>
+        <p>A non breaking <strong>hyphen,</strong> &#8209; looks like a regular hyphen but acts like a normal character in the middle of a word. (&amp;#8209;)</p>
+
+        <h2>Non-Breaking Space</h2>
+        <p>A non-breaking space (&nbsp;) looks like a single space but acts like a normal character in the middle of a word. This is my wo&nbsp;&nbsp;rd. (&amp;nbsp;)</p>
+        <p><strong><em>WARNING:</em></strong> Do <em>NOT</em> use non-breaking spaces to create space for the Layout of your page.</p>
+
+        <h2>Where do I find Character Entities?</h2>
+        <a href="https://html.spec.whatwg.org/multipage/named-characters.html" target="_blank">HTML Living Standard Character Entities</a><br>
+        <a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Full Emoji Listing</a>
+    </body>
+</html>
