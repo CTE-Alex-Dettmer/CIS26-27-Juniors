@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Color Examples</title>
+
+        <style>
+            .by-name {
+                color: forestgreen;
+            }
+            .by-RGB {
+                color: rgb(255, 0, 0);
+            }
+            .by-hex {
+                color: #0000FF;
+            }
+            .by-HSL {
+                color: hsl(270, 100%, 50%);
+            }
+            .by-RGBA {
+                color: rgba(0, 0, 0, 0.5);
+            }
+            .by-HSLA {
+                color: hsla(0, 100%, 50%, 0.3);
+            }
+            .solid {
+                background-color: LightSkyBlue;
+            }
+            .with-image {
+                background-color: #2b2d5c; /*Color gets drawn first.*/
+                background-image: url(img/dots.svg); /*Drawn on top of the color.*/
+                color: white;
+            }
+            .shorthand {
+                background: darkgreen url(img/dots.svg);
+                color: white;
+            }
+            .clear-box {
+                border: 2px dashed rgb(50,50,50);
+            }
+            .glass {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Four Ways To Write A Color</h1>
+        <p class="by-name">This text uses a color Name.</p>
+        <p class="by-RGB">This text uses an RGB value.</p>
+        <p class="by-hex">This text uses a hexadecimal value.</p>
+        <p class="by-HSL">This text uses an HSL value.</p>
+        <p class="by-RGBA">This text uses RGBA (black at half opacity).</p>
+        <p class="by-HSLA">This text uses HSLA (red at 30% opacity).</p>
+
+        <h2>Background Practice</h2>
+
+        <p class="solid">background-color: LightSkyBlue</p>
+        <p class="with-image">background-color plus a background-image drawn on top.</p>
+        <p class="shorthand">Background shorthand: color and image in one declaration.</p>
+        <p class="clear-box">No background: the body's color shows through (transparent).</p>
+        <div class="with-image">
+            <p class="glass">A half-transparent paragraph sitting on a dark, dotted div.</p>
+        </div>
+    </body>
+</html>
