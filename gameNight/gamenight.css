@@ -59,11 +59,14 @@ nav li {
 
 nav a {
    color: var(--neon-green);
+   text-transform: uppercase;
+   text-decoration: none;
 }
 
 nav a:hover {
    background-color: var(--gold);
    color: black;
+   text-decoration: underline;
 }
 
 /* Step 5: float the image, clear the footer */
@@ -97,19 +100,46 @@ h1 {
    font-family: "Courier New", Consolas, monospace;
 }
 
+/* Step 8: font-size with relative units */
 h2 {
    font-size: 1.8rem;
 }
 
 .tagline {
-   font-size: 120;
+   font-size: 120%;
 }
 
-/* Step 8: font-size with relative units */
+.badge {
+   font-size: 0.7em;
+}
 
+footer {
+   font-size: x-small;
+}
 
 /* Step 9: font-weight, font-style, font-variant */
+.tagline {
+   font-style: italic;
+}
 
+.time {
+   font-weight: bold;
+}
+
+h2 {
+   font-variant: small-caps;
+}
 
 /* Step 10: text-align, text-transform, text-decoration, text-indent */
+header, footer {
+   text-align: center;
+}
 
+#rules p {
+   text-align: justify;
+   text-indent: 2em;
+}
+
+.cancelled {
+   text-decoration: line-through 0.3em;
+}
